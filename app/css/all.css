@@ -4,24 +4,25 @@
 }
 
 body{
-    background: blue;
+    background: azure;
+    font-family:Verdana, Geneva, sans-serif;
 }
 
 header{
     height: 150px;
     width: 800px;
     margin: 0 auto;
-    background: yellow;
+    background: #57baff;
 }
 
 #wrapper{
     margin: 0 auto;
-    background: red;
+    background: azure;
     width:800px;
 }
 
 nav{
-    background: pink;
+    background: #06bbff;
     width: 800px;
     height:50px;
 }
@@ -41,25 +42,25 @@ nav a{
 }
 
 nav a:hover{
-    background: red;
+    background: #aafef9;
     color: white;
 }
 
 main{
-    background: green;
+    background: #c1e5f9;
     width:500px;
     height: 500px;
     float: left;
 }
 aside{
-    background: black;
+    background: #aafef9;
     width:250px;
     height: 500px;
     float:right;
 }
 
 footer{
-    background: purple;
+    background: #06bbff;
     border-top: 1px dotted;
     height:50px;
     clear: both;

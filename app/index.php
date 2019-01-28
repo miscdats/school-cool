@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="CSS/all.css" type="text/css">
+<?php require('content.php')
+?>
 <link rel="stylesheet" href="css/login.css" type="text/css">
 
 <html>
@@ -6,9 +7,9 @@
         <title>School Cool Login</title>
     </head>
     <body>
-        <header>
-
-        </header>
+        <?php			
+			head();			
+		?>
 
         <div id="wrapper">
             
@@ -27,14 +28,11 @@
                     
                 </form>
             </main>
-          
-      
-
-
-
-            <footer>
-
-            </footer>
+			
+			<?php			
+				foot();			
+			?>
+     
         </div>
     </body>
 </html>

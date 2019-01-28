@@ -1,0 +1,28 @@
+main{
+    float: none;
+    margin:0 auto;
+}
+
+input[type=text],
+input[type=password]{
+    height: 20px;
+    width:80%;
+}
+button{
+    height: 60px;
+    width: 100px;
+}
+
+#credentials{
+    max-width: 200px;
+    padding-top: 50px;
+    padding-bottom:50px;
+    padding-left: :auto;
+    padding-right: :auto;
+    margin: auto;
+}
+
+#buttons{
+    margin:0 auto;
+    max-width: 300px;
+}

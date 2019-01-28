@@ -7,27 +7,34 @@
     </head>
     <body>
         <header>
-            
+
         </header>
-        
+
         <div id="wrapper">
             
-            <nav>
-            
-            </nav>
-            
             <main>
-                
+                <form action="home.php" method="post">
+                    <div id="credentials">
+                        <label>Username:</label>
+                        <input type="text" name="username">
+                        <label>Password:</label>
+                        <input type="password" name="password">
+                    </div>
+                <div id="buttons">
+                    <button id="signin">sign in </button>
+                    <button id="signup">sign up</button>
+                </div>
+                    
+                </form>
             </main>
-            
-            <aside>
-            
-            </aside>
-            
+          
+      
+
+
+
             <footer>
-            
+
             </footer>
         </div>
     </body>
 </html>
-

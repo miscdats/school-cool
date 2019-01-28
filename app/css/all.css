@@ -26,6 +26,25 @@ nav{
     height:50px;
 }
 
+nav li{
+    float: left;
+    list-style-type: none;
+    width:20%;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    line-height: 50px;
+    display: block;
+    color: white;
+}
+
+nav a:hover{
+    background: red;
+    color: white;
+}
+
 main{
     background: green;
     width:500px;
@@ -41,7 +60,7 @@ aside{
 
 footer{
     background: purple;
-    width: 800px;
+    border-top: 1px dotted;
     height:50px;
     clear: both;
 }

@@ -1,32 +1,38 @@
-<link rel="stylesheet" href="CSS/all.css" type="text/css">
-<link rel="stylesheet" href="css/login.css" type="text/css">
+<?php
+	require('content.php')
+?>
 
 <html>
     <head>
-        <title>School Cool Login</title>
+        <title>School Cool gradesx</title>
     </head>
     <body>
-        <header>
-
-        </header>
+        
+		<?php
+			head();			
+		?>
+		
 
         <div id="wrapper">
+			<?php
+				nav();
+			?>
 
-            <nav>
-
-            </nav>
+            
 
             <main>
 
             </main>
 
             <aside>
+			
+			</aside>
 
-            </aside>
+			<?php
+			foot();			
+		?>
 
-            <footer>
-
-            </footer>
+            
         </div>
     </body>
 </html>

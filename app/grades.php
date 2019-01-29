@@ -1,5 +1,5 @@
 <?php
-	require('/content/content.php')
+	require('content/content.php')
 ?>
 
 <html>

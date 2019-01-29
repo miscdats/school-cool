@@ -1,10 +1,10 @@
 <?php
-	require('/content/content.php')
+	require('content/content.php')
 ?>
 
 <html>
     <head>
-        <title>School Cool :: Grades</title>
+        <title>School Cool :: Resources</title>
     </head>
     <body>
 

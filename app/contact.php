@@ -4,35 +4,35 @@
 
 <html>
     <head>
-        <title>School Cool Ressources</title>
+        <title>School Cool :: Contact US</title>
     </head>
     <body>
-        
+
 		<?php
-			head();			
+			head();
 		?>
-		
+
 
         <div id="wrapper">
 			<?php
 				nav();
 			?>
 
-            
+
 
             <main>
-
+                
             </main>
 
             <aside>
-			
+
 			</aside>
 
-			<?php
-			foot();			
-		?>
+            <?php
+                foot();
+            ?>
 
-            
+
         </div>
     </body>
 </html>

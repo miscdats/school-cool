@@ -1,5 +1,5 @@
 <?php
-	require('content.php')
+	require('content/content.php')
 ?>
 
 <html>
@@ -7,32 +7,32 @@
         <title>School Cool Classes</title>
     </head>
     <body>
-        
+
 		<?php
-			head();			
+			head();
 		?>
-		
+
 
         <div id="wrapper">
 			<?php
 				nav();
 			?>
 
-            
+
 
             <main>
 
             </main>
 
             <aside>
-			
+
 			</aside>
 
 			<?php
-			foot();			
+			foot();
 		?>
 
-            
+
         </div>
     </body>
 </html>

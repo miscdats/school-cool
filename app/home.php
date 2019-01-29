@@ -1,37 +1,37 @@
-
 <?php
-	require('content.php')
+	require('content/content.php')
 ?>
 
 <html>
     <head>
-        <title>School Cool</title>
+        <title>School Cool :: HOME</title>
     </head>
     <body>
-        
-		<?php			
-			head();			
+
+
+		<?php
+			head();
 		?>
-		
+
 
         <div id="wrapper">
-			<?php				
+			<?php
 				nav();
-			?>            
+			?>
 
             <main>
 
             </main>
 
             <aside>
-			
+
 			</aside>
 
-			<?php			
-				foot();			
+			<?php
+				foot();
 			?>
 
-            
+
         </div>
     </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-	require('content.php')
+	require('content/content.php')
 ?>
 
 <html>
@@ -21,7 +21,7 @@
 
 
             <main>
-                
+
             </main>
 
             <aside>

@@ -9,29 +9,30 @@
     </head>
     <body>
         
-		<?php			
-			head();			
+
+		<?php
+			head();
 		?>
-		
+
 
         <div id="wrapper">
-			<?php				
+			<?php
 				nav();
-			?>            
+			?>
 
             <main>
-
+				
             </main>
 
             <aside>
-			
+
 			</aside>
 
-			<?php			
-				foot();			
+			<?php
+				foot();
 			?>
 
-            
+
         </div>
     </body>
 </html>

@@ -1,37 +1,51 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 body{
     background: azure;
+    font-size: 100%;
     font-family:Verdana, Geneva, sans-serif;
 }
 
 header{
     height: 150px;
-    width: 800px;
+    width: 95%;
     margin: 0 auto;
     background: #57baff;
+    padding: 15px;
 }
 
 #wrapper{
     margin: 0 auto;
     background: azure;
-    width:800px;
+    width:95%;
+    opacity: .8;
+    padding-left: 15px 15px 0;
 }
 
 nav{
     background: #06bbff;
-    width: 800px;
     height:50px;
+    line-height: 75px;
+    opacity: .73;
 }
+
+nav li:nth-child(1), nav li:nth-child(2),
+nav li:nth-child(3), nav li:nth-child(4) {
+    background: #57baff;
+}
+
+nav ul{}
 
 nav li{
     float: left;
     list-style-type: none;
     width:20%;
     text-align: center;
+    background: darkgrey;
 }
 
 nav a{
@@ -43,19 +57,22 @@ nav a{
 
 nav a:hover{
     background: #aafef9;
-    color: white;
+    color: inherit;
+    text-decoration: overline;
 }
 
 main{
     background: #c1e5f9;
-    width:500px;
-    height: 500px;
+    width:56.57%;
     float: left;
+    height: 600px;
 }
+
 aside{
     background: #aafef9;
-    width:250px;
+    width:38.43%;
     height: 500px;
+    margin: 50px 5px 50px 5px;
     float:right;
 }
 
@@ -64,4 +81,58 @@ footer{
     border-top: 1px dotted;
     height:50px;
     clear: both;
+    line-height: 30px;
+    font-family: "Trebuchet MS", sans-serif;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+footer ul {
+    padding-left: 20px;
+}
+
+footer li {
+    float:left;
+    list-style-type: none;
+    margin-right: 30px;
+    font-size: .75em;
+    color: #666;
+}
+
+footer a {
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    body.home #wrapper {
+        width: 95%;
+    }
+    body.inner #wrapper {
+        width: 95%;
+    }
+    nav#primary ul {
+        width: 96%;
+    }
+    main {
+        width: 56.57%;
+    }
+    aside {
+        width: 39.17%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    main {
+        width: auto;
+        float: none;
+    }
+    aside {
+        width: auto;
+        float: none;
+        border: none;
+    }
+    aside img {
+        display: block;
+        margin: 0 auto;
+    }
 }

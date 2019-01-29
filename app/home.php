@@ -1,14 +1,13 @@
-
 <?php
-	require('content.php')
+	require('content/content.php')
 ?>
 
 <html>
     <head>
-        <title>School Cool</title>
+        <title>School Cool :: HOME</title>
     </head>
     <body>
-        
+
 
 		<?php
 			head();
@@ -21,7 +20,7 @@
 			?>
 
             <main>
-				
+
             </main>
 
             <aside>

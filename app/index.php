@@ -1,10 +1,10 @@
-<?php require('content.php')
+<?php require('content/content.php')
 ?>
 <link rel="stylesheet" href="css/login.css" type="text/css">
 
 <html>
     <head>
-        <title>School Cool Login</title>
+        <title>School Cool :: Login</title>
     </head>
     <body>
         <?php
@@ -22,7 +22,7 @@
                         <input type="password" name="password">
                     </div>
                 <div id="buttons">
-                    <button id="signin">Sign in </button>
+                    <button id="signin">Sign in</button>
                     <button id="signup">Sign up</button>
                 </div>
 

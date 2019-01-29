@@ -1,10 +1,10 @@
 <?php
-	require('content/content.php')
+	require('content.php')
 ?>
 
 <html>
     <head>
-        <title>School Cool :: Resources</title>
+        <title>School Cool :: Contact US</title>
     </head>
     <body>
 
@@ -21,16 +21,16 @@
 
 
             <main>
-
+                
             </main>
 
             <aside>
 
 			</aside>
 
-			<?php
-			foot();
-		?>
+            <?php
+                foot();
+            ?>
 
 
         </div>

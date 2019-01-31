@@ -90,3 +90,7 @@ CREATE TABLE Resources
 			REFERENCES	Courses					(course_id)
 												ON DELETE CASCADE
 );
+
+-- username
+-- password
+-- blogentries

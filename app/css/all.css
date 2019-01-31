@@ -116,6 +116,23 @@ main{
     height: 600px;
 }
 
+div#search {
+   float: right;
+   margin-top: 10px;
+   margin-right: 100px;
+   width:130px;
+   border:none;
+
+}
+
+table#submitted {
+   margin-top: 50px;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
+
 aside{
     background: #aafef9;
     width:38.43%;

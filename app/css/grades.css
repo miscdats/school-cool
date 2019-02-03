@@ -1,0 +1,51 @@
+.grades_rows {
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:10px;
+}
+
+.label {
+    width:100px;
+    color:#5b7171;
+    float:left;
+    padding-top:5px;
+}
+
+.input-row {
+    width:280px;
+    height:32px;
+    background-color:#FFF;
+    float:left;
+    position:relative;
+}
+
+.submit_button {
+    background:#118eb1;
+    padding:6px;
+    border:none;
+    cursor:pointer;
+    color: #fff7b3;
+}
+
+.success {
+    padding-bottom:30px;
+    color:#009900;
+}
+
+.error {
+    padding-bottom:30px;
+    color:#F00;
+}
+
+#sliderText1, #sliderText2 {
+    width:35px;
+    padding-left: 3px;
+}
+
+/***** Typography ********/
+
+h2, h4 {
+    color:#5b7171;
+    margin-bottom: 5px;
+}

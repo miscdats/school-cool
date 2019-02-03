@@ -1,58 +1,14 @@
+<link rel="stylesheet" href="css/grades.css" type="text/css">
+
 <?php
 	require('libs/config.php');
 	include('content/content.php');
-
-    function simple_redirect($url) {
-        echo "<script language=\"JavaScript\">\n";
-        echo "<!-- hide from old browser\n\n";
-        echo "window.location = \"" . $url . "\";\n";
-        echo "-->\n";
-        echo "</script>\n";
-        return true;
-    }
-
-    // Return a value
-    function db_prepare_input($string) {
-        return trim(addslashes($string));
-    }
-
-	// On form submit
-	if (isset($_POST["sbtn"])) {
-		$grade_course	= db_prepare_input($_POST["user_gcourse"]);
-		$grade_name		= db_prepare_input($_POST["user_gname"]);
-		$grade_amt		= db_prepare_input($_POST["user_gamt"]);
-		$grade_weight	= db_prepare_input($_POST["user_gweight"]);
-
-		$new_grade		=	$grade_course;
-		$new_grade		.=	$grade_name;
-		$new_grade		.=	$grade_amt;
-		$new_grade		.=	$grade_weight;
-
-		if ($new_grade) {
-			simple_redirect("grades.php?msg=success");
-
-		} else {
-			simple_redirect("grades.php?msg=error");
-		}
-	}
+	include('content/gradesFunctions.php');
 ?>
 
 <html>
     <head>
         <title>School Cool :: GRADES</title>
-		<style>
-			.grades_rows{ width:100%; height:auto; overflow:hidden; margin-bottom:10px; }
-			.label{ width:100px;color:#000; float:left;padding-top:5px;}
-			.input-row{ width:280px; height:32px; background-color:#FFF; float:left; position:relative; }
-			.input-textarea-row{ width:280px; height:65px; background-color:#FFF; float:left; position:relative; }
-			.textbox{ width:100%; height:24px;  border:1px solid #007294;outline:none; background:transparent; color:#000; padding:0px;  }
-			.submit_button{background:#118eb1;padding:2px;border:none;cursor:pointer;}
-			.success{padding-bottom:30px; color:#009900;}
-			.error{padding-bottom:30px; color:#F00;}
-			#sliderText1{width:35px; padding-left: 3px;}
-			#sliderText2{width:35px; padding-left: 3px;}
-		</style>
-
     </head>
     <body>
 		<?php head(); ?>
@@ -103,7 +59,7 @@
 						 <span><input type="text" id="sliderText2" value="20.0" readonly></span>
 	                </div>
 					<div class="grades_rows">
-						<input type="submit" value="send" name="sbtn" class="submit_button" />
+						<input type="submit" value="Post it our fridge door." name="sbtn" class="submit_button" />
 					</div>
 				</form>
             </main>

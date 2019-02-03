@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="CSS/all.css" type="text/css">
 <?php
+	// require('libs/config.php')
+
 	function nav(){
 		echo "<nav>
 				<ul>

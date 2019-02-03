@@ -2,7 +2,7 @@
 <!-- <link rel="stylesheet" href="./CSS/grades.css" type="text/css"> -->
 <?php
     // require('libs/config.php');
-    
+
 
     function recordGrade() {
         $sql = "INSERT INTO Grades (grade_course, grade_name, grade_amt, grade_weight)

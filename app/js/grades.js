@@ -46,3 +46,11 @@ function validateForm() {
 
 	return true;
 }
+
+function updateGradeSliderText(val) {
+	document.getElementById('sliderText1').value = val;
+}
+
+function updateWeightSliderText(val) {
+	document.getElementById('sliderText2').value = val;
+}

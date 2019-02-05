@@ -36,6 +36,7 @@ CREATE TABLE Students
     student_contact		INT						, -- fk
     student_first		VARCHAR(20)				NOT NULL,		
     student_last		VARCHAR(30)				NOT NULL,
+    student_password    VARCHAR(30)				NOT NULL,
     student_age			INT(3)					,
     student_fees		INT						,-- fk
     CONSTRAINT			students_fk_contact		

@@ -1,38 +1,22 @@
-<?php require('content/content.php')
-?>
-<link rel="stylesheet" href="css/login.css" type="text/css">
+<link rel="stylesheet" href="css/log.css" type="text/css">
+<?php
+    include('/content/login.php'); // Includes Login Script
+    if(isset($_SESSION['login_user'])){
+    header("location: profile.php"); // Redirecting To Profile Page
+    }
+    ?>
 
-<html>
-    <head>
-        <title>School Cool :: Login</title>
-    </head>
-    <body>
-        <?php
-			head();
-		?>
+<script src="js/login.js"></script>
+<div class="login-page">
+  <div class="form">
+    <form class="login-form" action="content/login_content.php" method="post">
+      <input type="text" placeholder="Last Name" name="lastname"/>
+      <input type="password" placeholder="password" name="password"/>
+      <button name="login_submit" type="submit">login</button>
 
-        <div id="wrapper">
+    </form>
+    <p class="message">Not registered? <a href="signup.php">Create an account</a></p>
 
-            <main>
-                <form action="home.php" method="post">
-                    <div id="credentials">
-                        <label>Username: </label>
-                        <input type="text" name="username">
-                        <label>Password: </label>
-                        <input type="password" name="password">
-                    </div>
-                <div id="buttons">
-                    <button id="signin">Sign in</button>
-                    <button id="signup">Sign up</button>
-                </div>
-
-                </form>
-            </main>
-
-			<?php
-				foot();
-			?>
-
-        </div>
-    </body>
-</html>
+    </form>
+  </div>
+</div>

@@ -59,7 +59,7 @@
 						 <span><input type="text" id="sliderText2" value="20.0" readonly></span>
 	                </div>
 					<div class="grades_rows">
-						<input type="submit" value="Post it our fridge door." name="sbtn" class="submit_button" />
+						<input type="submit" value="Post it our on fridge door." name="sbtn" class="submit_button" />
 					</div>
 				</form>
             </main>

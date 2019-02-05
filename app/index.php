@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/log.css" type="text/css">
+<link rel="stylesheet" href="css/login.css" type="text/css">
 <?php
     include('/content/login.php'); // Includes Login Script
     if(isset($_SESSION['login_user'])){

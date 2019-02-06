@@ -30,16 +30,16 @@
 	            enctype="multipart/form-data" onsubmit="return validateForm();">
 	                <div class="grades_rows">
 	                    <label>Course: </label>
-	                    <!-- <select name="Course">
+	                    <select name="Course">
 						?php
 		                    $sql = mysqli_query($connection, "SELECT grade_course FROM grades;");
 		                    while $grarow = $sql->fetch_assoc()) {
 		                        echo "<option value=\"Course\">" . $row['grade_course'] . "</option>";
 		                    }
 						?>
-	                    </select> -->
-	                    <input type ="text" name="user_gcourse" id="user_gcourse"
-						 value="" placeholder="Astronomy 101" required />
+	                    </select>
+	                    <!-- <input type ="text" name="user_gcourse" id="user_gcourse"
+						 value="" placeholder="Astronomy 101" required /> -->
 	                </div>
 	                <div class="grades_rows">
 	                    <label>Assignment: </label>
@@ -59,7 +59,7 @@
 						 <span><input type="text" id="sliderText2" value="20.0" readonly></span>
 	                </div>
 					<div class="grades_rows">
-						<input type="submit" value="Post it our on fridge door." name="sbtn" class="submit_button" />
+						<input type="submit" value="Post it on our fridge door." name="sbtn" class="submit_button" />
 					</div>
 				</form>
             </main>

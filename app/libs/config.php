@@ -7,9 +7,8 @@
     $host = 'localhost';
     $port = 3308;
 
-    $con = new mysqli($host, $user, $password, $db, $port)
+    $conn = new mysqli($host, $user, $password, $db, $port)
         or die ('Could not connect to the database server' . mysqli_connect_error());
-
 
     $link = mysqli_init();
     $success = mysqli_real_connect(
@@ -20,6 +19,9 @@
        $db,
        $port
     );
-    // $con->close();
+
+    function CloseCon($conn) {
+        $conn->close();
+    }
 
 ?>

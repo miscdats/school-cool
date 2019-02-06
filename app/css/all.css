@@ -16,6 +16,7 @@ header{
     margin: 0 auto;
     background: #57baff;
     padding: 15px;
+    color: #fff7b3;
 }
 
 #wrapper{
@@ -55,13 +56,13 @@ nav a{
     text-decoration: none;
     line-height: 50px;
     display: block;
-    color: white;
+    color: #fff7b3;
     font-size: 16px;
 }
 
 nav a:hover, .dropdown:hover .dropbtn{
     background: #aafef9;
-    color: inherit;
+    color: grey;
     text-decoration: overline;
 }
 
@@ -76,7 +77,7 @@ nav a:hover, .dropdown:hover .dropbtn{
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: #fff7b3;
     font-family: inherit;
     float: left;
     width: 20%;
@@ -94,7 +95,7 @@ nav a:hover, .dropdown:hover .dropbtn{
 
 .dropdown-content a {
     float: none;
-    color: white;
+    color: #fff7b3;
     padding: 12px 16px;
     display: block;
     text-align: center;
@@ -114,6 +115,7 @@ main{
     width:56.57%;
     float: left;
     height: 600px;
+    padding: 40px;
 }
 
 div#search {
@@ -150,6 +152,7 @@ footer{
     font-family: "Trebuchet MS", sans-serif;
     padding-left: 15px;
     padding-top: 5px;
+    color: #fff7b3;
 }
 
 footer ul {
@@ -165,7 +168,7 @@ footer li {
 }
 
 footer a {
-    color: white;
+    color: #fff7b3;
 }
 
 @media screen and (max-width:800px) {

@@ -30,12 +30,15 @@
 	            enctype="multipart/form-data" onsubmit="return validateForm();">
 	                <div class="grades_rows">
 	                    <label>Course: </label>
-	                    <select name="Course">
-						?php
-		                    $sql = mysqli_query($connection, "SELECT grade_course FROM grades;");
-		                    while $grarow = $sql->fetch_assoc()) {
-		                        echo "<option value=\"Course\">" . $row['grade_course'] . "</option>";
-		                    }
+	                    <select name="course">
+						<?php
+		                   	$selectQuery = 'SELECT course_name	FROM COURSES';
+							$result = $conn->query($selectQuery);
+							if ($result->num_rows > 0) {
+						        while($row = $result->fetch_assoc()) {
+						            echo "<option>" . $row['course_name'] . "</option>";
+						        }
+						    }
 						?>
 	                    </select>
 	                    <!-- <input type ="text" name="user_gcourse" id="user_gcourse"

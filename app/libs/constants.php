@@ -10,8 +10,8 @@ define('SITE_DIR', '/app/');
 
 define('DB_DRIVER', 'mysql');
 define('DB_HOST', 'localhost');
-define('DB_HOST_USERNAME', 'root');
-define('DB_HOST_PASSWORD', 'root');
+define('DB_USER', 'root');
+define('DB_PASS', '');
 define('DB_DATABASE', 'schoolcool');
 
 define('SITE_NAME', 'School Cool');

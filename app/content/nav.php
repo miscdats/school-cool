@@ -2,10 +2,10 @@
 <?php function nav(){
     echo "<nav>
             <ul>
-                <li><a href=\"home.php\">HOME</a></li>
-                <li><a href=\"contact.php\">CONTACT US</a></li>
+                <li><a href=\"home.php\">HOME</a></li>                
                 <li><a href=\"grades.php\">GRADES</a></li>
                 <li><a href=\"resources.php\">RESOURCES</a></li>
+                <li><a href=\"contact.php\">CONTACT US</a></li>
                     <div class=\"dropdown\">
                         <button class=\"dropbtn\">
                             <li><a href=\"classes.php\">CLASSES</a>

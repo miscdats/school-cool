@@ -38,8 +38,10 @@ CREATE TABLE Students
     student_first		CHAR(15)				NOT NULL,
     student_last		CHAR(20)				NOT NULL,
     student_contact		INT						, -- fk
-    student_fees		INT						, -- fk
     student_enrolled	BOOLEAN					,		
+    student_password    VARCHAR(30)				NOT NULL,
+    student_age			INT(3)					,
+    student_fees		INT						,-- fk
     CONSTRAINT			students_fk_contact		
 		FOREIGN KEY								(student_contact)
 			REFERENCES	Contacts				(contact_id)

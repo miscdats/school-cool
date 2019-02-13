@@ -1,9 +1,11 @@
 <?php
     function recordGrade() {
-        $sql = "INSERT INTO Grades (grade_course, grade_name, grade_amt, grade_weight)
-                VALUES ();";
+        // $sql = $conn->prepare("INSERT INTO Grades (grade_course, grade_name, grade_amt, grade_weight)
+                // VALUES (?, ?, ?)");
         $sql .= "INSERT INTO Grades (grade_course, grade_name, grade_amt, grade_weight)
                 VALUES ();";
+        $sql->bind_param("ssdd", $grade_course, $grade_name, $grade_amt, $grade_weight);
+
 
         if ($conn->multi_query($sql) === TRUE) {
             echo "<p>Grades recorded successfully.</p>";
@@ -46,5 +48,15 @@
 		}
 	}
 
+    function viewGrade() {
+        $sql = "SELECT grade_course, grade_name, grade_amt, grade_weight)
+                FROM GRADES;";
+
+        if ($conn->multi_query($sql) === TRUE) {
+            echo "<p>You got this.</p>";
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    }
 
 ?>

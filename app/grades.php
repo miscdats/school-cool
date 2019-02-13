@@ -68,7 +68,61 @@
             </main>
 
             <aside>
-                <!-- ?php gradeTableView(); ?> -->
+
+				<div id="gradesview">
+				<div style="height:30px;clear:both"></div>
+		        <h4>View logged grades</h4>
+				<div style="height:30px;clear:both"></div>
+					<?php if (isset($_GET["msg"]) && $_GET["msg"] == "error") {  ?>
+			      <div class="error">There was problem...! Please try again or check again later.</div>
+			      <?php } ?>
+	            <form name="gradeViewForm" action="grades.php" method="GET"
+	            enctype="multipart/form-data">
+	                <div class="gradesview_rows">
+	                    <label>Course: </label>
+	                    <select name="course" onchange="showAss()" id="course">
+						<?php
+		                   	$selectQuery = 'SELECT course_name	FROM COURSES';
+							$result = $conn->query($selectQuery);
+							if ($result->num_rows > 0) {
+						        while($row = $result->fetch_assoc()) {
+						            echo "<option>" . $row['course_name'] . "</option>";
+						        }
+						    }
+						?>
+	                    </select>
+	                </div>
+	                <div class="gradesview_rows">
+	                    <label>Assignment: </label>
+						<select name="assignment" style="display:none;">
+						<?php
+		                   	$selectQuery = 'SELECT grade_name	FROM GRADES';
+							$result = $conn->query($selectQuery);
+							if ($result->num_rows > 0) {
+						        while($row = $result->fetch_assoc()) {
+						            echo "<option>" . $row['course_name'] . "</option>";
+						        }
+						    }
+						?>
+	                    </select>
+	                </div>
+					<div class="gradesview_rows">
+						<input type="submit" value="Take a look and chill." name="sbtn" class="submit_button" />
+					</div>
+					<br>
+	                <div class="gradesview_rows">
+	                    <label>Grade (0-100): </label>
+						<output form="gradeViewForm" name="gradeview_amt" for="grade_am">
+						</output>
+	                </div>
+					<div class="gradesview_rows">
+	                    <label>Weight (0-100): </label>
+						<output form="gradeViewForm" name="gradeview_weight" for="grade_weight">
+ 					   </output>
+	                </div>
+					<h6> You got this! </h6>
+				</form>
+			</div>
 			</aside>
 
 			<?php foot(); ?>

@@ -5,6 +5,13 @@
     margin-bottom:10px;
 }
 
+aside.gradesview_rows {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin:5px;
+}
+
 .label {
     width:100px;
     color:#5b7171;
@@ -43,9 +50,14 @@
     padding-left: 3px;
 }
 
+
 /***** Typography ********/
 
-h2, h4 {
+h2, h4, h6 {
     color:#5b7171;
     margin-bottom: 5px;
+}
+
+div#gradesview h6 {
+    margin-top: 50px;
 }
